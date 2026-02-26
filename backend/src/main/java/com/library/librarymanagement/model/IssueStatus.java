@@ -1,4 +1,4 @@
-package com.library.librarymanagement.models;
+package com.library.librarymanagement.model;
 
 public enum IssueStatus {
     ISSUED,

@@ -143,6 +143,22 @@ public class IssueService {
         return issueRepository.getIssuedBooksCount();
     }
     
+    /**
+     * Overloaded method: Issue a book without explicit dates (uses today's date and 14 days later as due date)
+     */
+    public Issue issueBook(Long bookId, Long studentId) {
+        LocalDate today = LocalDate.now();
+        LocalDate dueDate = today.plusDays(14);  // Default: 2 weeks
+        return issueBook(bookId, studentId, today, dueDate);
+    }
+    
+    /**
+     * Overloaded method: Return a book without explicit return date (uses today's date)
+     */
+    public Issue returnBook(Long issueId) {
+        return returnBook(issueId, LocalDate.now());
+    }
+    
     @Transactional(readOnly = true)
     public Long getOverdueBooksCount() {
         return issueRepository.getOverdueBooksCount();

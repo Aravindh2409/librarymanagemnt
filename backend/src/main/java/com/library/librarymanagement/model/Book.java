@@ -1,4 +1,4 @@
-package com.library.librarymanagement.models;
+package com.library.librarymanagement.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

@@ -58,6 +58,11 @@ public class BookService {
     public List<Book> getBooksByGenre(String genre) {
         return bookRepository.findByBgenre(genre);
     }
+
+    @Transactional(readOnly = true)
+    public List<Book> getByGenre(String genre) {
+        return bookRepository.findByBgenre(genre);
+    }
     
     @Transactional(readOnly = true)
     public List<Book> getBooksByYear(Integer year) {

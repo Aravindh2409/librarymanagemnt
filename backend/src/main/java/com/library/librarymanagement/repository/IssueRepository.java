@@ -33,4 +33,6 @@ public interface IssueRepository extends JpaRepository<Issue, Long> {
     List<Issue> findActiveIssues();
     
     List<Issue> findByStatus(IssueStatus status);
+    
+    long countByStatus(String status);
 }
