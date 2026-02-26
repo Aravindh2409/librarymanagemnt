@@ -1,6 +1,6 @@
-package com.lms.library.repository;
+package com.library.librarymanagement.repository;
 
-import com.lms.library.models.Student;
+import com.library.librarymanagement.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

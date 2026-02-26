@@ -1,12 +1,12 @@
-package com.lms.library.services;
+package com.library.librarymanagement.service;
 
-import com.lms.library.models.Book;
-import com.lms.library.models.Issue;
-import com.lms.library.models.IssueStatus;
-import com.lms.library.models.Student;
-import com.lms.library.repository.BookRepository;
-import com.lms.library.repository.IssueRepository;
-import com.lms.library.repository.StudentRepository;
+import com.library.librarymanagement.model.Book;
+import com.library.librarymanagement.model.Issue;
+import com.library.librarymanagement.model.IssueStatus;
+import com.library.librarymanagement.model.Student;
+import com.library.librarymanagement.repository.BookRepository;
+import com.library.librarymanagement.repository.IssueRepository;
+import com.library.librarymanagement.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

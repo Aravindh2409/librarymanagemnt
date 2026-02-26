@@ -1,7 +1,7 @@
-package com.lms.library.services;
+package com.library.librarymanagement.service;
 
-import com.lms.library.models.Student;
-import com.lms.library.repository.StudentRepository;
+import com.library.librarymanagement.model.Student;
+import com.library.librarymanagement.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
